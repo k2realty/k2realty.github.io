@@ -54,7 +54,7 @@
 .links {
     text-align: start;
     width: 150px;
-    margin:auto
+    margin:auto;
 }
 
 .navfooter {
@@ -91,6 +91,11 @@
 
 .slideover {
     padding-left: 0;
+}
+
+#menubtn {
+    font-size: 40px;
+    color:#3c3c3c
 }
 
 @media (max-width: 780px) {
