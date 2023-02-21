@@ -19,6 +19,8 @@
     text-align: center;
     top: 0;
     left: 0;
+    transition: .5s;
+    white-space: nowrap;
 }
 
 .sidenav::-webkit-scrollbar {
@@ -68,4 +70,40 @@
     max-width: 1000px;
     margin: 2rem auto;
     padding: 1.5rem;
+}
+
+
+
+.navbtn {
+    z-index: 2;
+    position: absolute;
+    right: 2rem;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#clickzone {
+    height: 100%;
+    width: 100vh;
+    padding-left: 200px;
+    background-color: #b0a68c;
+}
+
+.slideover {
+    padding-left: 0;
+}
+
+@media (max-width: 780px) {
+    .sidenav{
+        width: 0;
+    }
+    .container {
+        padding-left: 0;
+    }
+    .shownav {
+        width: 200px;
+    }
+    .navbtn {
+        visibility: visible;
+    }
 }
