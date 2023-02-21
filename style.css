@@ -98,6 +98,26 @@
     color:#3c3c3c
 }
 
+h1 {
+    color:#484848;
+    font-size: 2rem;
+    margin-bottom: .25rem;
+}
+
+h4 {
+    color: #727272;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #3c3c3c
+}
+
+.container-md {
+    max-width: 700px;
+    margin:auto;
+}
+
 @media (max-width: 780px) {
     .sidenav{
         width: 0;
