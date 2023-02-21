@@ -6,3 +6,66 @@
     font-weight: 400;
     box-sizing: border-box;
 }
+
+.sidenav {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #012145;
+    box-shadow: 0 10px 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+.sidenav::-webkit-scrollbar {
+    display: none;
+}
+
+.navlogo {
+    width: 6rem;
+    margin: 3rem 0;
+}
+
+.navlink {
+    display: block;
+    color: #b0a68c;
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.navlink:hover {
+    color: #ffffff;
+}
+
+.active {
+    background-color: #a7985e;
+    color: #ffffff;
+    border-radius: 0.3rem;
+}
+
+.links {
+    text-align: start;
+    width: 150px;
+    margin:auto
+}
+
+.navfooter {
+    margin-top: 4rem;
+    color: #838383;
+}
+
+.container {
+    padding-left: 200px;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
