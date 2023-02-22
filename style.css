@@ -2,9 +2,23 @@
 
 * {
     margin: 0;
-    font-family: "outfit", sans-serif;
     font-weight: 400;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "outfit", sans-serif;
+}
+
+.social {
+    font-size: 2.5rem;
+    margin-top: 50px;
+}
+
+.social i {
+    color: #d5d5d5;
+    padding: 5px;
 }
 
 .sidenav {
