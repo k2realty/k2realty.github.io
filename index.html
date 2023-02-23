@@ -6,46 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="output.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script src="https://kit.fontawesome.com/2d2042756f.js" crossorigin="anonymous"></script>
   <title>K2 Realty Corporation</title>
 </head>
 <body>
-  <span onclick="togglenav()" id="menubtn" class="material-symbols-outlined">menu</span>
-  <nav id="navbar" class="" >
-    <img class="navlogo" src="images/k2logo.png" alt="K2 Realty logo">
-    <div class="links">
-      <a class="" href="/">Home</a>
-      <a class="" href="/">Buying</a>
-      <a class=""" href="/">Selling</a>
-      <a class="" href="/">Commercial</a>
-      <a class="" href="/">Agents</a>
-      <a class="" href="/">About</a>
-      <a class="" href="/">Contact</a>
+  <i onclick="togglenav()" id="menubtn" class="fa-solid fa-bars absolute top-5 right-5 text-3xl lg:invisible"></i>
+  <nav id="navbar" class="fixed h-full w-0 bg-blue-900 lg:w-52 transition-all overflow-hidden shadow-[5px_0px_20px_0px_rgba(0,0,0,0.5)]">
+    <img class="w-32 m-auto my-10" src="images/k2logo.png" alt="K2 Realty logo">
+    <div class="flex flex-col p-10">
+      <a class="mb-2 text-xl text-white bg-zinc-700 pl-3 rounded" href="/">Home</a>
+      <a class="hover:text-zinc-100 mb-2 text-xl text-zinc-400 pl-3 rounded" href="/">Buying</a>
+      <a class="hover:text-zinc-100 mb-2 text-xl text-zinc-400 pl-3 rounded" href="/">Selling</a>
+      <a class="hover:text-zinc-100 mb-2 text-xl text-zinc-400 pl-3 rounded" href="/">Commercial</a>
+      <a class="hover:text-zinc-100 mb-2 text-xl text-zinc-400 pl-3 rounded" href="/">Agents</a>
+      <a class="hover:text-zinc-100 mb-2 text-xl text-zinc-400 pl-3 rounded" href="/">About</a>
+      <a class="hover:text-zinc-100 mb-2 text-xl text-zinc-400 pl-3 rounded" href="/">Contact</a>
     </div>
-    <div class="">
-      <a href=""><i class="fa-brands fa-twitter"></i></a>
-      <a href=""><i class="fa-brands fa-facebook"></i></a>
+    <div class="text-amber-200 text-center text-3xl">
+      <a href=""><i class="p-2 hover:text-blue-400 fa-brands fa-twitter"></i></a>
+      <a href=""><i class="p-2 hover:text-blue-500 fa-brands fa-facebook"></i></a>
     </div>
     
-    <p class="" >Copyright© k2 Realty</p>
+    <p class="text-gray-500 text-center pt-24" >Copyright© k2 Realty</p>
   </nav>
   <main class="">
-    <header class="">
-      <div class="">
-        <h1>Home</h1>
-      </div>
-    </header>
-    <section class="">
-      <div class="">
-          <div class="">
-          <img src="images/k2black.png" alt="K2 Realty Corporation Logo">
-          <h1>Have an expert real estate agent on your side.</h1>
-          <h4>One of Edmonton and area most refreshing real estate firms.</h4>
-          <a class="" href="https://www.realtor.ca/map#Sort=6-D&OrganizationId=293747&IncludePins=1&Currency=CAD">Our listings</a>
-        </div>
-        <div class="">
-          <img src="images/home1.jpg" alt="home interior rendering">
+    <section class="lg:pl-52">
+      <div class="container mx-auto p-6">
+        <div class="grid lg:grid-cols-2 gap-4 justify-items-center">
+          <div class="justify-self-center text-center w-full">
+            <img class="my-36 m-auto justify-self-center w-4/12" src="images/k2black.png" alt="K2 Realty Corporation Logo">
+            <h1>Have an expert real estate agent on your side.</h1>
+            <h4>One of Edmonton and area most refreshing real estate firms.</h4>
+            <a class="" href="https://www.realtor.ca/map#Sort=6-D&OrganizationId=293747&IncludePins=1&Currency=CAD">Our listings</a>
+          </div>
+          <img class="h-[70rem] lg:max-h-screen object-cover w-10/12 justify-self-end" src="images/home1.jpg" alt="home interior rendering">
         </div>
       </div>
     </section>
