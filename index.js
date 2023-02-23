@@ -1,10 +1,18 @@
 const togglenav = () => {
-    document.querySelector("#navbar").classList.toggle('shownav');
-    let open = document.querySelector("#navbar").classList.contains('shownav');
-    if (open) {
-        document.querySelector("#menubtn").textContent = "close"
+    if (document.querySelector("#navbar").classList.contains("w-0")) {
+        document.querySelector("#navbar").classList.remove("w-0");
+        document.querySelector("#navbar").classList.add("w-52");
     } else {
-        document.querySelector("#menubtn").textContent = "menu"
+        document.querySelector("#navbar").classList.remove("w-52");
+        document.querySelector("#navbar").classList.add("w-0");
+    }
+    let closed = document.querySelector("#navbar").classList.contains('w-0');
+    if (closed) {
+        document.querySelector("#menubtn").classList.remove("fa-xmark");
+        document.querySelector("#menubtn").classList.add("fa-bars");
+    } else {
+        document.querySelector("#menubtn").classList.remove("fa-bars");
+        document.querySelector("#menubtn").classList.add("fa-xmark");
     }
 
 }
