@@ -927,6 +927,10 @@ video {
   transform: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .touch-auto {
   touch-action: auto;
 }
@@ -1774,6 +1778,11 @@ video {
 .bg-zinc-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#012145\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 33 69 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
