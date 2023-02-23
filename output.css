@@ -2853,6 +2853,10 @@ video {
     display: none;
   }
 
+  .lg\:h-\[70rem\] {
+    height: 70rem;
+  }
+
   .lg\:max-h-screen {
     max-height: 100vh;
   }
