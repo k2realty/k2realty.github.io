@@ -804,6 +804,10 @@ video {
   width: 13rem;
 }
 
+.w-6\/12 {
+  width: 50%;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -2437,6 +2441,10 @@ video {
 
   .lg\:w-52 {
     width: 13rem;
+  }
+
+  .lg\:w-4\/12 {
+    width: 33.333333%;
   }
 
   .lg\:pl-52 {
