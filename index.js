@@ -16,3 +16,12 @@ const togglenav = () => {
     }
 
 }
+
+window.addEventListener('click', function(e){
+    if (!document.getElementById('navbar').contains(e.target) && (!document.getElementById('menubtn').contains(e.target))){
+    document.getElementById('navbar').classList.remove("w-52");
+    document.getElementById('navbar').classList.add("w-0");
+    document.querySelector("#menubtn").classList.remove("fa-xmark");
+    document.querySelector("#menubtn").classList.add("fa-bars");
+  } 
+})
