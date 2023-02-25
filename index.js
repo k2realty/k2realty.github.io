@@ -17,7 +17,7 @@ const togglenav = () => {
 
 }
 
-window.addEventListener('click', function(e){
+window.addEventListener("touchstart", function(e){
     if (!document.getElementById('navbar').contains(e.target) && (!document.getElementById('menubtn').contains(e.target))){
     document.getElementById('navbar').classList.remove("w-52");
     document.getElementById('navbar').classList.add("w-0");
