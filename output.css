@@ -683,6 +683,11 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -1950,6 +1955,10 @@ video {
   padding-top: 6rem;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2615,6 +2624,10 @@ video {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:pl-52 {
