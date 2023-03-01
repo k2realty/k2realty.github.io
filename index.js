@@ -34,7 +34,7 @@ const sendMail = () => {
         phone : document.querySelector("#phone").value,
         contact_Method : document.querySelector("#contact_Method").value,
         subject : document.querySelector("#subject").value,
-        street_Address : document.querySelector("#street_address").value,
+        street_Address : document.querySelector("#street_Address").value,
         city : document.querySelector("#city").value,
         province : document.querySelector("#province").value,
         postal_Code : document.querySelector("#postal_Code").value
