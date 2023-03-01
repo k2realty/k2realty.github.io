@@ -38,6 +38,7 @@ const sendMail = () => {
         province : document.querySelector("#province").value,
         postal_Code : document.querySelector("#postal_Code").value,
     }
+    
     emailjs.send('service_0j957un', 'template_0qklrj3', params)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
