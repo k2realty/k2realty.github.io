@@ -27,7 +27,7 @@ window.addEventListener("touchstart", function(e){
 })
 
 const sendMail = () => {
-    let params = {
+    let templateParams = {
         fname : document.querySelector("#fname").value,
         lname : document.querySelector("#lname").value,
         email : document.querySelector("#email").value,
@@ -36,10 +36,10 @@ const sendMail = () => {
         subject : document.querySelector("#subject").value,
         city : document.querySelector("#city").value,
         province : document.querySelector("#province").value,
-        postal_Code : document.querySelector("#postal_Code").value,
+        postal_Code : document.querySelector("#postal_Code").value
     }
-    
-    emailjs.send('service_0j957un', 'template_0qklrj3', params)
+
+    emailjs.send('service_0j957un', 'template_0qklrj3', templateParams)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
