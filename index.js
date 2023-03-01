@@ -25,3 +25,23 @@ window.addEventListener("touchstart", function(e){
     document.querySelector("#menubtn").classList.add("fa-bars");
   } 
 })
+
+const sendMail = () => {
+    let params = {
+        fname : document.querySelector("#fname").value,
+        lname : document.querySelector("#lname").value,
+        email : document.querySelector("#email").value,
+        phone : document.querySelector("#phone").value,
+        contact_Method : document.querySelector("#contact_Method").value,
+        subject : document.querySelector("#subject").value,
+        city : document.querySelector("#city").value,
+        province : document.querySelector("#province").value,
+        postal_Code : document.querySelector("#postal_Code").value,
+    }
+    emailjs.send('service_0j957un', 'template_0qklrj3', params)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+}
