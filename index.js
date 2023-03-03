@@ -24,4 +24,4 @@ window.addEventListener("touchstart", e => {
     document.querySelector("#menubtn").classList.remove("fa-xmark");
     document.querySelector("#menubtn").classList.add("fa-bars");
   } 
-})
+});
