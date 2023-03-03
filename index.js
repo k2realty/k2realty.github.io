@@ -47,18 +47,16 @@ form.addEventListener("submit", e => {
     if (fname.length === 0){
         err.fname = "First name is missing";
         fnameErr.innerText = err.fname
-        fnameErr.classList.remove("invisible");
     } else {
         delete err.fname;
-        fnameErr.classList.add("invisible");
+        fnameErr.innerText = "";
     }
     if (email.length < 6){
         err.email = "Valid email is missing";
         emailErr.innerText = err.email;
-        emailErr.classList.remove("invisible");
     } else {
         delete err.email;
-        emailErr.classList.add("invisible");
+        emailErr.innerText = "";
     }
     if (!Object.keys(err).length > 0){
         let templateParams = {
