@@ -91,7 +91,9 @@
                     </div>
                   </div>
                   <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
-                    <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Send</button>
+                    <span id="success" class="bg-green-500 text-white py-2 px-4 mr-6 rounded hidden">Success! Your message has been sent.</span>
+                    <span id="fail" class="bg-red-500 text-white py-2 px-4 mr-6 rounded hidden">Whelp... something went wrong.</span>
+                    <button id="submit" type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Send</button>
                   </div>
                 </div>
               </form>
@@ -101,6 +103,12 @@
       </div>
     </section>
   </main>
+
+<div id="loader" class="hidden h-screen w-screen z-50 bg-gray-800/80 absolute top-0 left-0 text-center justify-center">
+  <i class="text-7xl text-teal-300 animate-spin fa-solid fa-spinner relative top-1/2"></i>
+</div>
+
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
    (function(){
@@ -149,12 +157,20 @@ form.addEventListener("submit", e => {
             address : address,
         }
         
+        const loader = document.querySelector("#loader");
+        const success = document.querySelector("#success");
+        const fail = document.querySelector("#fail");
+        const submit = document.querySelector("#submit");
+
+        loader.classList.remove("hidden");
         emailjs.send('service_0j957un', 'template_0qklrj3', templateParams).then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
-        alert("Someone will be in touch as soon as possible.");
-        location.reload();
+        loader.classList.add("hidden");
+        success.classList.remove("hidden");
+        submit.setAttribute("disabled", "");
         }, function(error) {
-          alert("Something went wrong. Its not you, it's me.");
+          loader.classList.remove("hidden");
+          fail.classList.remove("hidden");
         });
     } 
 })
