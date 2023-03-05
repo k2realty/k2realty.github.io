@@ -148,13 +148,13 @@ form.addEventListener("submit", e => {
             subject : subject,
             address : address,
         }
-
+        
         emailjs.send('service_0j957un', 'template_0qklrj3', templateParams).then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
         alert("Someone will be in touch as soon as possible.");
         location.reload();
         }, function(error) {
-        console.log('FAILED...', error);
+          alert("Something went wrong. Its not you, it's me.");
         });
     } 
 })
